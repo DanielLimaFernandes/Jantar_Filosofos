@@ -1,1 +1,3 @@
 # Jantar_Filosofos
+
+Implementei o código utilizando o mecanismo do semáforo. a classe Semaforo funciona usando um booleano para indicar se o recurso está disponível. O método esperar() bloqueia até que o recurso esteja disponível, enquanto o método sinalizar() libera o recurso e notifica qualquer thread que estiver esperando. Filósofo tenta pegar um talher: Chama pegar() que usa esperar() no semáforo. Se o talher está ocupado, o filósofo pensa. Filósofo termina de usar um talher: Chama liberar() que usa sinalizar() no semáforo, liberando o talher para outros filósofos. Portanto o semáforo controla o acesso ao talher: ele impede que múltiplos filósofos usem o mesmo talher ao mesmo tempo e coordena o acesso para evitar conflitos.
